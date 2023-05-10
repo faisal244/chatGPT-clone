@@ -30,15 +30,17 @@ function Homepage() {
 					<div className="flex flex-col items-center justify-center mb-5">
 						{/* Sun Icon */}
 						<BoltIcon className="h-8 w-8 " />
-						<h2>Examples</h2>
+						<h2>Capabilities</h2>
 					</div>
 
 					<div className="space-y-2">
-						<p className="infoText">"Explain Something to Me"</p>
+						<p className="infoText">Change the ChatGPT Model to use</p>
 						<p className="infoText">
-							"What is the difference between and dog and a cat?"
+							Messages are stored in Firebase's Firestore
 						</p>
-						<p className="infoText">"What is the colour of the sun?"</p>
+						<p className="infoText">
+							Hot Toast notifications when ChatGPT is thinking!
+						</p>
 					</div>
 				</div>
 
@@ -46,15 +48,19 @@ function Homepage() {
 					<div className="flex flex-col items-center justify-center mb-5">
 						{/* Sun Icon */}
 						<ExclamationTriangleIcon className="h-8 w-8 " />
-						<h2>Examples</h2>
+						<h2>Limitations</h2>
 					</div>
 
 					<div className="space-y-2">
-						<p className="infoText">"Explain Something to Me"</p>
 						<p className="infoText">
-							"What is the difference between and dog and a cat?"
+							May occasionally generate incorrect information
 						</p>
-						<p className="infoText">"What is the colour of the sun?"</p>
+						<p className="infoText">
+							May occasionally produce harmful instructions or biased content
+						</p>
+						<p className="infoText">
+							Limited knowledge of world and events after 2021
+						</p>
 					</div>
 				</div>
 			</div>
