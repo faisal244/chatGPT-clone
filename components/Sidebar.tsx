@@ -1,6 +1,6 @@
 import NewChat from "./NewChat";
 
-function Sidebar() {
+function SideBar() {
 	return (
 		<div className="p-2 flex flex-col h-screen">
 			<div className="flex-1">
@@ -15,4 +15,4 @@ function Sidebar() {
 	);
 }
 
-export default Sidebar;
+export default SideBar;

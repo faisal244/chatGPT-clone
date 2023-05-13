@@ -1,8 +1,8 @@
-import Sidebar from "../../components/Sidebar";
+import SideBar from "../../components/Sidebar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "ChatGPT Clone",
@@ -16,10 +16,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<head />
+			<body>
 				<div className="flex">
-					{/* sidebar */}
-					<Sidebar />
+					<div className="bg-[#202123] md:min-w-[20rem] max-w-xs overflow-y-auto h-screen">
+						<SideBar />
+					</div>
 					{/* ClientProvider - Notification */}
 					<div className="bg-[#343541] flex-1 "> {children}</div>
 				</div>
