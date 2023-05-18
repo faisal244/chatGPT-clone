@@ -7,11 +7,7 @@ import { useRouter } from "next/navigation";
 import { db } from "../firebase";
 import { type } from "os";
 
-type Props = {
-	id: string;
-};
-
-function NewChat({ id }: Props) {
+function NewChat() {
 	const router = useRouter();
 	const { data: session } = useSession();
 
