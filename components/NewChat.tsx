@@ -5,8 +5,13 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { db } from "../firebase";
+import { type } from "os";
 
-function NewChat() {
+type Props = {
+	id: string;
+};
+
+function NewChat({ id }: Props) {
 	const router = useRouter();
 	const { data: session } = useSession();
 
